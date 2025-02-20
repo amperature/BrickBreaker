@@ -4,6 +4,6 @@
 
 This is a clone of BrickBreaker made in Unity for MTEC-340 at the Berklee College of Music.
 
-Video Demonstration:
+Video Demonstration (Week 4):
 
-![Video](./BrickBreaker_Demonstration.mp4)
+![Video](./BrickBreaker_Week4_Demonstration.mp4)
