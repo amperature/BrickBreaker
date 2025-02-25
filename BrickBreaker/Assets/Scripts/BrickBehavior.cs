@@ -20,4 +20,5 @@ public class BrickBehavior : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 }
