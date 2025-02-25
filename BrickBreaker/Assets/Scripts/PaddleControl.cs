@@ -13,14 +13,15 @@ public class PaddleControl : MonoBehaviour
     void Update()
 
     {
-    
-        if (Input.GetKey(KeyCode.LeftArrow)) {
-            transform.position += new Vector3(-movementSpeed * Time.deltaTime, 0);
+        if (GameBehavior.Instance.State == Utilities.GameplayState.Play) {
+            if (Input.GetKey(KeyCode.LeftArrow)) {
+                transform.position += new Vector3(-movementSpeed * Time.deltaTime, 0);
 
-        }
-        else if (Input.GetKey(KeyCode.RightArrow)) {
-            transform.position += new Vector3(movementSpeed * Time.deltaTime, 0);
-        }
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -9.5f, 9.5f), -4.0f);        
+            }
+            else if (Input.GetKey(KeyCode.RightArrow)) {
+                transform.position += new Vector3(movementSpeed * Time.deltaTime, 0);
+            }
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8.5f, 8.5f), -4.0f); 
+        }       
     }
 }

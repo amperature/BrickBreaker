@@ -15,9 +15,10 @@ public class BrickBehavior : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        Debug.Log("yeah this collided");
+        //Debug.Log("yeah this collided");
         if (collision.gameObject.CompareTag("ball")) {
             Destroy(gameObject);
+            GameBehavior.Instance.ScorePoint();
         }
     }
     
