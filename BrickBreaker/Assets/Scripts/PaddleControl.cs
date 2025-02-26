@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PaddleControl : MonoBehaviour
 {
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private float movementSpeed = 10f;
     void Start()
@@ -18,10 +20,10 @@ public class PaddleControl : MonoBehaviour
                 transform.position += new Vector3(-movementSpeed * Time.deltaTime, 0);
 
             }
-            else if (Input.GetKey(KeyCode.RightArrow)) {
+            else if (Input.GetKey(KeyCode.RightArrow)) {    
                 transform.position += new Vector3(movementSpeed * Time.deltaTime, 0);
             }
-                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8.5f, 8.5f), -4.0f); 
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7.3f, 7.3f), -4.0f); 
         }       
     }
 }
